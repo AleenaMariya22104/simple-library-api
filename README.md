@@ -18,8 +18,20 @@ curl -X POST -H "Content-Type: application/json" -d '{"title": "1984", "author":
 2. Register Members: <br>
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Aleena", "email": "aleena123@gmail.com"}' http://127.0.0.1:5001/members <br>
 3. List Books and Members: <br>
-curl http://127.0.0.1:5001/books
-curl http://127.0.0.1:5001/members
+curl http://127.0.0.1:5001/books <br>
+curl http://127.0.0.1:5001/members <br>
+4. Borrow a Book: <br>
+curl -X POST -H "Content-Type: application/json" -d '{"book_id": 1, "member_id": 1}' http://127.0.0.1:5001/borrow <br>
+5. Get details of a book: <br>
+curl http://127.0.0.1:5001/books/1 <br>
+6. Get details of currently borrowed books: <br>
+curl http://127.0.0.1:5001/books/borrowed <br>
+7. Return a Book <br>
+curl -X POST -H "Content-Type: application/json" -d '{"book_id": 1, "member_id": 1}' http://127.0.0.1:5001/return <br>
+8. Delete a Book with id 2 <br>
+curl -X DELETE http://127.0.0.1:5001/books/2 <br>
+
+
 
    
 
