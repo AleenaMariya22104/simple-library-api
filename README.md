@@ -11,7 +11,7 @@ Database: SQLite <br>
 4. Run the Application using the code: python app.py <br>
 
 ## API Documentation
-The base URL for all endpoints is http://127.0.0.1:5001 <br>
+The base URL is http://127.0.0.1:5001 <br>
 1. Books: <br>
 POST /books - Add a new book. <br>
 GET /books - List all books. <br>
