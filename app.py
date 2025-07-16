@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# --- Database Models ---
+# Database Models
 
 class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -36,7 +36,7 @@ class BorrowedBook(db.Model):
 with app.app_context():
     db.create_all()
 
-# --- Book Management ---
+# Book Management 
 
 @app.route('/books', methods=['POST'])
 def add_book():
@@ -92,7 +92,7 @@ def delete_book(id):
     db.session.commit()
     return jsonify({'message': 'Book deleted.'})
 
-# --- Member Management ---
+# Member Management 
 
 @app.route('/members', methods=['POST'])
 def add_member():
@@ -111,7 +111,7 @@ def list_members():
         output.append(member_data)
     return jsonify({'members': output})
 
-# --- Borrow / Return Flow ---
+# Borrow / Return 
 
 @app.route('/borrow', methods=['POST'])
 def borrow_book():
@@ -157,7 +157,7 @@ def return_book():
     db.session.commit()
     return jsonify({'message': 'Book returned successfully.'})
 
-# --- Reports ---
+# Reports 
 
 @app.route('/books/borrowed', methods=['GET'])
 def list_borrowed_books():
