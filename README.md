@@ -11,6 +11,21 @@ Database: SQLite <br>
 4. Run the Application using the code: python app.py <br>
 
 ## API Documentation
+The base URL for all endpoints is http://127.0.0.1:5001 <br>
+1. Books: <br>
+POST /books - Add a new book. <br>
+GET /books - List all books. <br>
+GET /books/<id> - Get a single book. <br>
+DELETE /books/<id> - Delete a book. <br>
+
+2. Members: <br>
+POST /members - Add a new member. <br>
+GET /members - List all members. <br>
+
+3. Actions: <br>
+POST /borrow - Borrow a book. <br>
+POST /return - Return a book. <br>
+GET /books/borrowed - See all currently borrowed books. <br>
 
 ## Sample curl Requests 
 1. Add Books: <br>
