@@ -10,3 +10,10 @@ Database: SQLite <br>
 3. Installed the dependencies using the code: pip install -r requirements.txt <br>
 4. Run the Application using the code: python app.py <br>
 
+## API Documentation
+
+## Sample curl Requests 
+Add Books: <br>
+curl -X POST -H "Content-Type: application/json" -d '{"title": "1984", "author": "George Orwell", "category": "classic", "total_copies": 7}' http://127.0.0.1:5001/books
+
+
