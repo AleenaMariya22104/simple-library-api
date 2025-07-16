@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify # type: ignore
-from flask_sqlalchemy import SQLAlchemy # type: ignore
+from flask import Flask, request, jsonify 
+from flask_sqlalchemy import SQLAlchemy 
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
