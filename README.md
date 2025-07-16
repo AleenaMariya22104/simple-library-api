@@ -13,7 +13,14 @@ Database: SQLite <br>
 ## API Documentation
 
 ## Sample curl Requests 
-Add Books: <br>
-curl -X POST -H "Content-Type: application/json" -d '{"title": "1984", "author": "George Orwell", "category": "classic", "total_copies": 7}' http://127.0.0.1:5001/books
+1. Add Books: <br>
+curl -X POST -H "Content-Type: application/json" -d '{"title": "1984", "author": "George Orwell", "category": "classic", "total_copies": 7}' http://127.0.0.1:5001/books <br>
+2. Register Members: <br>
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Aleena", "email": "aleena123@gmail.com"}' http://127.0.0.1:5001/members <br>
+3. List Books and Members: <br>
+curl http://127.0.0.1:5001/books
+curl http://127.0.0.1:5001/members
+
+   
 
 
