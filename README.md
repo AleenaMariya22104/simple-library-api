@@ -5,8 +5,8 @@ Framework: Flask <br>
 Database: SQLite <br>
 
 ## Setup instructions
-1. Created a folder simple-library-api for the project. Inside it, createed two files app.py and requirements.txt <br>
-2. Set Up the virtual environment using the code : python3 -m venv venv <br>
+1. Created a folder simple-library-api, for the project. Inside it, created two files: app.py and requirements.txt <br>
+2. Set up the virtual environment using the code: python3 -m venv venv <br>
 3. Installed the dependencies using the code: pip install -r requirements.txt <br>
 4. Run the Application using the code: python app.py <br>
 
